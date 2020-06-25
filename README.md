@@ -1,6 +1,7 @@
 # bus-reservation
 
-***
-
-## Installation
-* install test.py
+## Update
+#### Pricing
+* aniq/layout.html
+* aniq/Price.java
+* aniq/styles.css
