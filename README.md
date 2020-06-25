@@ -8,4 +8,6 @@
 
 #### To-do
 * Receipt
-* availibility
+* acai = css
+* man/zakwan = receipt
+* aniq = availibility
