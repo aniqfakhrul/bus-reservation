@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 public class Price extends HttpServlet{
 
 	// calculate price
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		int total=0;
 		response.setContentType("text/html");
 		
@@ -19,14 +19,16 @@ public class Price extends HttpServlet{
 	
 		for(int i=0; i<input.length; i++){	
 			if (input[i].contains("C") || input[i].contains("B")) {
-				total = total + 2000;
+				out.println("<tr class='item'><td>"+ input[i] +"</td><td>RM 40.00</td></tr>");
+				total = total + 40;
 			}
 			else if (input[i].contains("A")) {
-				total = total + 10000;
+				out.println("<tr class='item'><td>"+ input[i] +"</td><td>RM 50.00</td></tr>");
+				total = total + 50;
 			}
 		}
 		
-		out.print("<h1>Total price is "+total+"</h1>");
+		out.print("<h1>Total price is RM "+total+"</h1>");
 	}
 	
 }
